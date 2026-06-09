@@ -469,6 +469,86 @@
     }
     .fact-label { margin: 0; color: rgba(247,240,231,0.86); }
 
+    .research-section {
+      background: var(--warm-section);
+      color: var(--ink);
+    }
+    .research-intro {
+      margin: 0 0 36px;
+      max-width: 72ch;
+      font-size: 17px;
+      line-height: 1.85;
+    }
+    .research-stack {
+      display: grid;
+      gap: 2px;
+      background: var(--stone);
+    }
+    .research-project {
+      background: var(--warm-white);
+      padding: 48px 40px;
+    }
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+    .research-title {
+      margin: 0 0 10px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(34px, 4vw, 46px);
+      line-height: 1.08;
+      letter-spacing: -0.015em;
+      font-weight: 400;
+    }
+    .research-subtitle {
+      margin: 0 0 18px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .research-copy .body-copy {
+      margin: 0;
+    }
+    .research-tag-nasa {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 10px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #e8eef8;
+      background: linear-gradient(135deg, #0b3d91, #1e5aa8);
+      border: 1px solid rgba(11, 61, 145, 0.35);
+    }
+    .research-tag-quiet {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 10px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #3e3834;
+      background: #efe8de;
+      border: 1px solid rgba(28, 25, 23, 0.12);
+    }
+    .research-poster {
+      margin: 0;
+      border: 1px solid var(--border);
+      background: #f2ece4;
+      overflow: hidden;
+    }
+    .research-poster img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
     .work-section {
       background: var(--warm-white);
     }
@@ -1147,7 +1227,7 @@
     @media (max-width: 1180px) {
       .impact-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .hero-inner { grid-template-columns: 1fr; }
-      .thread-grid, .origins-grid, .contact-grid { grid-template-columns: 1fr; }
+      .thread-grid, .origins-grid, .contact-grid, .research-grid { grid-template-columns: 1fr; }
       .reports { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .classroom-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .origin-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1156,7 +1236,7 @@
     @media (max-width: 720px) {
       .reports, .classroom-grid { grid-template-columns: 1fr; }
       .report-figure { min-height: 460px; }
-      .work-card, .class-card { padding: 32px 24px; }
+      .work-card, .class-card, .research-project { padding: 32px 24px; }
       .scroll-indicator { right: 16px; bottom: 16px; }
       .footer-inner {
         width: min(var(--container), calc(100% - 48px));
